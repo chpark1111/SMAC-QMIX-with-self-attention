@@ -23,7 +23,7 @@ def run(_run, _config, _log):
 
     args = SN(**_config)
     args.device = "cuda" if args.use_cuda else "cpu"
-
+    
     # setup loggers
     logger = Logger(_log)
 
